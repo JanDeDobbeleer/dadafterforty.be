@@ -1,0 +1,29 @@
+baseURL = "https://dadafterforty.be/"
+languageCode = "en-us"
+title = "d(e)adafterforty"
+disableKinds = ["taxonomyTerm"]
+
+[params]
+    [[params.links]]
+        icon = "github"
+        title = "Github"
+        url = "https://github.com/jandedobbeleer"
+    [[params.links]]
+        icon = "facebook"
+        title = "Facebook"
+        url = "https://facebook.com/dadafterforty"
+    [[params.links]]
+        icon = "instagram"
+        title = "Instagram"
+        url = "https://instagram.com/dadafterforty"
+    [[params.links]]
+        icon = "twitter"
+        title = "Twitter"
+        url = "https://twitter.com/dadafterforty"
+     [params.colors]
+        background = "#111111"
+        foreground = "#FFFFFF"
+        hover = "#FFEB3B"
+
+[Author]
+    name = "d(e)adafterforty"
