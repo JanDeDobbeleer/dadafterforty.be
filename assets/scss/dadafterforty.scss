@@ -1,0 +1,38 @@
+// Colours
+$color-background: {{ .Site.Params.colors.background | default "#111" }};
+$color-foreground: {{ .Site.Params.colors.foreground | default "#fff" }};
+$color-hover: {{ .Site.Params.colors.hover | default "#3B6E80" }};
+$color-link: {{ .Site.Params.colors.link | default "#3B6E80" }};
+$color-code-background: #272822;
+$color-code-color: #f8f8f2;
+
+// Fonts
+$sans-serif: Montserrat, 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+
+// Responsive breaks
+$break-extra-small: 575px;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-extra-large: 1200px;
+
+// Card
+$border-radius: 3px;
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+       -moz-transition: $args;
+            transition: $args;
+}
+
+@import 'dadafterforty/theme';
+@import 'dadafterforty/layout';
+@import 'dadafterforty/additional';
+@import 'dadafterforty/list';
+@import 'dadafterforty/single';
+@import 'dadafterforty/footer';
+@import 'dadafterforty/title';
+@import 'dadafterforty/navbar';
+@import 'dadafterforty/pagination';
+@import 'dadafterforty/404';

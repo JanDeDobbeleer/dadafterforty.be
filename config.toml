@@ -2,8 +2,13 @@ baseURL = "https://dadafterforty.be/"
 languageCode = "en-us"
 title = "d(e)adafterforty"
 disableKinds = ["taxonomyTerm"]
+description = "what is dad may never die"
+summaryLength = 30
+Copyright = "d(e)adafterforty 2019"
 
 [params]
+    Description = "what is dad may never die"
+    logo = "/images/logo.png"
     [[params.links]]
         icon = "github"
         title = "Github"
@@ -21,9 +26,22 @@ disableKinds = ["taxonomyTerm"]
         title = "Twitter"
         url = "https://twitter.com/dadafterforty"
      [params.colors]
-        background = "#111111"
-        foreground = "#FFFFFF"
-        hover = "#FFEB3B"
+        background = "#111"
+        foreground = "#fff"
+        hover = "#111"
+        link = "#3b6e80"
 
 [Author]
     name = "d(e)adafterforty"
+
+## Main Menu
+[[menu.main]]
+    name = "Blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog"
+[[menu.main]]
+    name = "About Me"
+    identifier = "about"
+    weight = 200
+    url = "/"

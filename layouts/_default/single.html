@@ -1,0 +1,55 @@
+{{ define "header"}}
+    {{- partial "navbar.html" . -}}
+{{ end }}
+
+{{ define "main" }}
+    {{- partial "title.html" . -}}
+    <div class="post-content">
+        <div class="post-image">
+            {{with .Params.image}}
+                <img class="featured-image img-fluid" src="{{ . | urlize | relURL }}" alt="thumbnail for this post">
+            {{end}}
+        </div>
+        <div class="post-title">
+            <h1 class="posttitle">{{ .Title }}</h1>
+        </div>
+        <div class="post-metadata">
+            <span>
+                <i class="far fa-star"></i>
+                {{ dateFormat "Jan 2, 2006" .PublishDate }}
+                <i class="far fa-clock clock"></i>
+                {{ .ReadingTime }} min read
+            </span>
+        </div>
+        <div class="post-content">
+            {{ .Content}}
+        </div>
+        <div class="post-tags">
+            <!-- <ul class="tags"> -->
+            {{ range .Params.tags }}
+            <!-- <li> -->
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{.}}</a>
+            <!-- </li> -->
+            {{ end }}
+            <!-- </ul> -->
+        </div>
+        <div class="post-category-navigator">
+            {{with .PrevInSection}}
+                <div class="previous">
+                    <a href="{{.RelPermalink}}"><i class="fas fa-arrow-circle-left"></i> Previous</a>
+                </div>
+            {{end}}
+            <div class="middle"></div>
+            {{with .NextInSection}}
+                <div class="next">
+                    <a href="{{.RelPermalink}}">Next <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            {{end}}
+        </div>
+    </div>
+{{ end }}
+
+{{ define "footer"}}
+    {{- partial "jumbotron.html" . -}}
+    {{- partial "footer.html" . -}}
+{{ end }}

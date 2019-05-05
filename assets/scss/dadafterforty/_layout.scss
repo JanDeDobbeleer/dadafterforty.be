@@ -20,7 +20,7 @@ main {
             margin-left: -4px; /* Correction for margin of leftmost character. */
             margin-top: 0;
         }
-        
+
         .links {
             margin-top: 2.5rem;
             font-size: 1.5rem;
@@ -34,7 +34,7 @@ main {
 
     @media screen and (max-width: $break-large) {
         flex-direction: column;
-        margin-top: 0;
+        margin-top: 10px;
 
         .column.left {
             text-align: center;
@@ -50,12 +50,12 @@ main {
     }
 }
 
-footer {
-    display: flex;
-    margin-top: 3rem;
-    font-size: 0.75rem;
+// footer {
+//     display: flex;
+//     margin-top: 3rem;
+//     font-size: 0.75rem;
 
-    @media screen and (max-width: $break-large) {
-        flex-direction: column;
-    }
-}
+//     @media screen and (max-width: $break-large) {
+//         flex-direction: column;
+//     }
+// }

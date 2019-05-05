@@ -1,0 +1,29 @@
+<!-- Begin Menu Navigation
+================================================== -->
+<header>
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}/">
+            {{ with .Site.Params.logo }}
+            <img src="{{ . | urlize | relURL }}" alt="logo">
+            {{ end }}
+            <span style="font-family:Montserrat;" class="title">{{.Site.Title}}</span>
+        </a>
+        <!-- End Logo -->
+
+        <!-- Begin Menu -->
+        <nav>
+            <input id='navicon' class="navicon" type='checkbox'>
+            <label for='navicon' class="naviconlabel"><i class="fas fa-bars"></i></label>
+            {{ $currentPage := . }}
+            <ul class="navbar-nav">
+                {{ range .Site.Menus.main }}
+                <li class="nav-item {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                    <a href="{{ .URL }}">{{ .Name | title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
+        <!-- End Menu -->
+</header>
+<!-- End Navigation
+================================================== -->

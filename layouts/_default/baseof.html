@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+<html lang="{{ .Site.LanguageCode | default "en" }}" class="page-{{ .Kind }}">
     {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
+    <body class="page-{{ .Kind }}">
+        {{- partial "navbar.html" . -}}
         {{- block "main" . }}{{- end }}
         {{- partial "footer.html" . -}}
     </body>

@@ -1,0 +1,20 @@
+.mainheading {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mainheading h1.sitetitle {
+    font-family: Montserrat;
+    font-size: 2rem;
+}
+
+.mainheading h1.posttitle {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+    .mainheading {
+      padding: 0;
+    }
+  }

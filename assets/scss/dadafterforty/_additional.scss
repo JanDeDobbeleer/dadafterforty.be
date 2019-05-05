@@ -1,0 +1,45 @@
+.index-title{
+    color: $color-foreground;
+    margin-top:20px;
+}
+.index-sub{
+    color: $color-foreground;
+
+}
+.index-text{
+    margin-top:20px;
+    color: $color-foreground;
+}
+.index-image{
+    width: 400px;
+}
+.social-icon{
+    color: $color-foreground;
+    font-size:1.5rem;
+    margin-left: 8px;
+}
+.clock{
+    margin-left: 25px;
+}
+.jumbotron.fortags a {
+    background: #1C9963 !important;
+}
+.error{
+    text-align: center !important;
+}
+@media(min-width: 769px){
+    .md-nopad-right{
+        padding-right: 0px !important;
+    }
+    .md-nopad-left{
+        padding-left: 0px !important;
+    }
+}
+
+body {
+    background: $color-background;
+}
+
+.navbar {
+    background: $color-background;
+}
