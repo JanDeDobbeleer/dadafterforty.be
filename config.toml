@@ -8,7 +8,11 @@ Copyright = "d(e)adafterforty 2019"
 
 [params]
     Description = "what is dad may never die"
+    Title = "d(e)adafterforty"
+    TwitterAuthor = "@dadafterforty"
+    TwitterCreator = "@dadafterforty"
     logo = "/images/logo.png"
+
     [[params.links]]
         icon = "github"
         title = "Github"
