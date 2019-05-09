@@ -12,6 +12,7 @@ Copyright = "d(e)adafterforty 2019"
     TwitterAuthor = "@dadafterforty"
     TwitterCreator = "@dadafterforty"
     logo = "/images/logo.png"
+    FacebookAppId = "650085268768722"
 
     [[params.links]]
         icon = "github"
