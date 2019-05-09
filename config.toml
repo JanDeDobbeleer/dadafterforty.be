@@ -1,4 +1,4 @@
-baseURL = "https://dadafterforty.be/"
+baseURL = "https://dadafterforty.be"
 languageCode = "en-us"
 title = "d(e)adafterforty"
 disableKinds = ["taxonomyTerm"]
