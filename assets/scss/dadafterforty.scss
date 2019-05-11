@@ -9,6 +9,10 @@ $color-code-color: #f8f8f2;
 // Fonts
 $sans-serif: Montserrat, 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+@font-face {
+    font-family: "FlottFlott";
+    src: url(/flottflott.regular.ttf) format("truetype");
+}
 
 // Responsive breaks
 $break-extra-small: 575px;
