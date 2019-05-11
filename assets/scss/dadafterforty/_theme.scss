@@ -17,7 +17,7 @@ body {
 }
 
 a {
-    @include transition(color .2s ease-out);
+    @include transition(color 0.2s ease-out);
     color: $color-foreground;
 
     &:hover {
@@ -60,4 +60,10 @@ img.portrait {
 a {
     color: $color-link;
     transition: all 0.2s;
+}
+
+em {
+    font-family: FlottFlott;
+    font-size: 23px;
+    margin-right: 4px;
 }
