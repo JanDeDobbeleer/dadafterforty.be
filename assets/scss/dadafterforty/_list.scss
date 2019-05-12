@@ -2,12 +2,13 @@
   display: flex;
   flex-flow: row wrap;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .post-item {
   width: 32%;
   margin-bottom: 20px;
+  margin-right: 20px;
 
   .post-card {
     height: 100%;
@@ -103,6 +104,8 @@
 
 @media screen and (max-width: 1000px) {
   .post-item {
+    margin-bottom: 0px;
+
     .post-card {
       .img {
         max-width: 150%;
